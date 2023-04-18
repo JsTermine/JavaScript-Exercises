@@ -1,6 +1,6 @@
 // Fundamentals #1
 
-/*
+
 let js = 'amazing';
 console.log(40 + 8 + 23 - 10);
 
@@ -217,5 +217,5 @@ if (age >= 18) {
 console.log(drink2);
 
 console.log(`It is OK for me to drink ${drink2}. My age is ${age}`);
-*/
+
 
