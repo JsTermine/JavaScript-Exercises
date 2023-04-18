@@ -1,3 +1,4 @@
+// Fundamentals #1
 
 /* 
 //Assignment 1 START Values and Variables
@@ -105,7 +106,7 @@ if (numNeighbours === 1) {
   console.log('No Borders');
 }
 // Assignment 8 ENDE
-*/
+
 
 // Coding Challenge #3 START
 const dolphinsScore = 96 + 108 + 89;
@@ -131,3 +132,28 @@ if ((averageScoreDolphins === averageScoreKoalas) && (averageScoreDolphins >= is
   console.log("No one wins the trophy");
 }
 // Coding Challenge #3 ENDE
+
+
+// Coding Challenge #4 START (Tip Calculator)
+
+//Test Data 1
+const bill1 = 275;
+const tip1 = bill1 >= 50 && bill1 <= 300 ? bill1 * 0.15 : bill1 * 0.2;
+console.log(`The bill was ${bill1}, the tip was ${tip1} and the total is ${bill1 + tip1}`);
+
+//Test Data 2
+const bill2 = 40;
+const tip2 = bill2 >= 50 && bill2 <= 300 ? bill2 * 0.15 : bill2 * 0.2;
+console.log(`The bill was ${bill2}, the tip was ${tip2} and the total is ${bill2 + tip2}`);
+
+//Test Data 3
+const bill3 = 430;
+const tip3 = bill3 >= 50 && bill3 <= 300 ? bill3 * 0.15 : bill3 * 0.2;
+console.log(`The bill was ${bill3}, the tip was ${tip3} and the total is ${bill3 + tip3}`);
+
+// Coding Challenge #4 ENDE
+
+*/
+
+
+
