@@ -14,7 +14,7 @@ console.log(population);
 //Assignment 1 END
 
 
-//Assignment 2 Data types
+//Assignment START 2 Data types
 let isIsland = true;
 let language;
 
