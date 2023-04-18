@@ -1,3 +1,5 @@
+// Fundamentals #1
+
 /*
 let js = 'amazing';
 console.log(40 + 8 + 23 - 10);
@@ -195,23 +197,25 @@ if (day === 'monday') {
 } else {
   console.log('Not a valid day!');
 }
-*/
-
-const age = 18;
-age >= 18 ? console.log("OK") : console.log("Not ok");
 
 
-const drink = age >= 18 ? "OK" : "Not ok";
+//standard Ternary
+const age = 23;
+age >= 18 ? console.log("I like to drink wine") : console.log("I like to drink water");
+
+// Ternary in a Variable
+const drink = age >= 18 ? "wine" : "water";
 console.log(drink);
 
+// Comparison to Standard Conditional
 let drink2;
-
 if (age >= 18) {
-  drink2 = 'wine'
+  drink2 = 'wine';
 } else {
-  drink2 = 'wine' ;
+  drink2 = 'water';
 }
-
 console.log(drink2);
 
-console.log(`It is ${drink} for me to drink ${drink2}. My age is ${age}`);
+console.log(`It is OK for me to drink ${drink2}. My age is ${age}`);
+*/
+
