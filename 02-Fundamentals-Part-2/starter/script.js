@@ -109,3 +109,70 @@ const yearsUntilRetirement2 = function (birthYear, firstName) {
 
 console.log(yearsUntilRetirement2(1991, "John"));
 console.log(yearsUntilRetirement2(1950, "Bob"));
+
+// Introduction Arrays
+const friend1 = "Michael";
+const friend2 = "Steven";
+const friend3 = "Peter";
+
+const friendsArr1 = ["Michael","Steven","Peter"];
+console.log(friendsArr1);
+console.log(friendsArr1[2]);
+console.log(friendsArr1.length);
+console.log(friendsArr1[friendsArr1.length - 1]);
+
+// Alternative way of an Array
+const yrs = new Array(1991, 1984, 2008, 2020);
+
+friendsArr1[2] = "Jay"; // Peter replaced by Jay
+console.log(friendsArr1[2]); 
+
+const firstname = "John";
+const john = [firstname,"White", 2023 - 1991, "Carpenter", friendsArr1]
+console.log(john); 
+console.log(john.length); 
+
+// Exercise
+function calcAge1(birthYear){
+    return 2023 - birthYear;
+}
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const ages1 = calcAge1(years[0]);
+const ages2 = calcAge1(years[1]);
+const ages3 = calcAge1(years[years.length - 1]);
+console.log(ages1, ages2, ages3); 
+
+const ages = [calcAge1(years[0]), calcAge1(years[1]), calcAge1(years[years.length - 1])];
+console.log(ages);
+
+// Basic Array Operations (Methods)
+// Add Elements
+const friendsArr2 = ["Michael","Steven","Peter"];
+const newLength = friendsArr2.push("Jay"); // Adds "Jay" at the end of the Array
+console.log(friendsArr2);
+console.log(newLength);
+
+friendsArr2.unshift("John"); // Adds "John" to the beginning of the Array
+console.log(friendsArr2);
+
+// Remove Elements
+friendsArr2.pop(); // Removes Last Element -> "Jay" is removed
+const popped = friendsArr2.pop(); // "Peter" is stored in "popped"
+console.log(popped);
+console.log(friendsArr2);
+
+friendsArr2.shift(); // Removes first Element
+console.log(friendsArr2);
+
+console.log(friendsArr2.indexOf("Steven")); // Returns index of Stevens' position
+console.log(friendsArr2.indexOf("Bob")); // Returns -1 since Bob doesn't exist
+
+console.log(friendsArr2.includes("Steven")); // Returns Boolean (using strict comparison ===)
+console.log(friendsArr2.includes("Bob")); // Returns false since Bob doesn't exist
+
+// Using it as a Parameter
+if (friendsArr2.includes("Steven")) {
+    console.log("You have a friend called Steven");
+}
