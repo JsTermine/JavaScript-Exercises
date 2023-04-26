@@ -23,7 +23,7 @@ const worldPopulation = 7900;  // represented as Millions
 
 function percentageOfWorld1(population) {
     const calcPercentage = ((population / worldPopulation) * 100).toFixed(2); // Rounded to hundredths 
-    
+
     return calcPercentage;
     //console.log(`${country} has ${population} million People, which represents ~${calcPercentage}% of the worlds Population.`);
 }
@@ -62,7 +62,7 @@ percentageOfWorld3("Finland", 6);
 console.log("\n");
 
 //Assignment 4 Functions Calling Other Functions
-function describePopulation(country, population)  {
+function describePopulation(country, population) {
     const test = percentageOfWorld1(population);
 
     console.log(`${country} has ${population} million people, which is about ${test}% of the world.`);
@@ -90,8 +90,8 @@ function checkWinner(avgDolphins, avgKoalas) {
 
 console.log("\n");
 
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / calcAverage.length; 
-    
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / calcAverage.length;
+
 // TEST DATA 1:
 const scoreDolphins = calcAverage(44, 23, 71);
 const scoreKoalas = calcAverage(65, 54, 49);
@@ -109,5 +109,20 @@ console.log("Dolphins Average Score: " + scoreDolphins2, "\nKoalas Average Score
 checkWinner(scoreDolphins2, scoreKoalas2);
 //Coding Challenge #1 END
 
+
+//Coding Challenge #2 Start (Tip Calculator using arrays)
+// TEST DATA:
+const bills = [125, 555, 44];
+const total = [];
+
+
+function calcTip(billInput) {
+    return billInput >= 50 && billInput <= 300 ? billInput * 0.15 : billInput * 0.2;
+}
+
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(bills, tips, totals);
+//Coding Challenge #2 END
 
 
