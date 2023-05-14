@@ -176,3 +176,50 @@ console.log(friendsArr2.includes("Bob")); // Returns false since Bob doesn't exi
 if (friendsArr2.includes("Steven")) {
     console.log("You have a friend called Steven");
 }
+
+// Introduction Objects
+// No way of referencing Elements by name, only by order Number
+const johnArray = [
+    "John",
+    "Wayne",
+    2023 - 1995,
+    "teacher",
+    ["Michael","Jordan","Steven"]
+];
+
+// Assign name to each element - Object Literal Syntax
+const johnObj = {
+    firstName: "John",
+    lastName: "Wayne",
+    job: "Teacher",
+    age: 2023 - 1995,
+    friends: ["Michael","Jordan","Steven"]
+};
+
+// Dot vs. Bracket Notation
+console.log(johnObj);
+
+console.log(johnObj.lastName);
+console.log(johnObj["lastName"]); // Bracket Notation can contain Expressions
+
+const nameKey = "Name";
+console.log(johnObj["first" + nameKey]);
+console.log(johnObj["last" + nameKey]);
+
+const interestedIn = prompt("What do you want to know about John Wayne? Choose between, firstName, lastName, age, job and friends ");
+console.log(johnObj[interestedIn]);
+
+if (johnObj[interestedIn]) {
+    console.log(johnObj[interestedIn])
+} else {
+    console.log("Wrong request! Choose between, firstName, lastName, age, job and friends");
+}
+
+johnObj.location = "Portugal";
+johnObj["instagram"] = "@johnwayne";
+console.log(johnObj);
+
+//Coding Challenge #2.5 START Write a sentence in a dynamic way
+//"John has 3 friends, and his best friend is called Jordan"
+console.log(`${johnObj.firstName} has ${johnObj.friends.length} friends, and his best friend is ${johnObj.friends[1]}`)
+//Coding Challenge #2.5 END
