@@ -61,10 +61,10 @@ percentageOfWorld3("Finland", 6);
 
 console.log("\n");
 
-//Assignment 4 Functions Calling Other Functions
+//Assignment 4 START Functions Calling Other Functions
 function describePopulation(country, population) {
     const test = percentageOfWorld1(population);
-
+    
     console.log(`${country} has ${population} million people, which is about ${test}% of the world.`);
 }
 
@@ -72,6 +72,37 @@ describePopulation("China", 1441);
 describePopulation("Switzerland", 8.8);
 describePopulation("Finland", 6);
 //Assignment 4 END
+
+console.log("\n");
+
+//Assignment 5 START Introduction to Arrays
+const populations = [1441, 8.8, 6, 68];
+console.log(populations.length == 4); // Check if array contains 4 elements
+const percentages = [percentageOfWorld1(populations[0]),percentageOfWorld1(populations[1]),percentageOfWorld1(populations[2]),percentageOfWorld1(populations[3])];
+console.log(percentages);
+//Assignment 5 END
+
+console.log("\n");
+
+//Assignment 6 START Basic Array Operations (Methods)
+const neighbours = ["Germany","France","Italy"];
+neighbours.push("Utopia");
+neighbours.pop("Utopia");
+console.log(neighbours.includes("Germany") ? "Probably a central European country :D" : "Probably not a central European country :D"); // Checking if Germany is in the Array
+console.log(neighbours[1] = "United Kingdom");
+//Assignment 6 END
+
+console.log("\n");
+
+//Assignment 7 START Introduction to Objects
+const myCountry = {
+    country: "Switzerland",
+    capital: "Bern",
+    language: "German",
+    population: 8.8,
+    neighbours: ["Germany","France","Italy"]
+};
+//Assignment 7 END
 
 
 //////////////--->Challenges<--//////////////////
@@ -124,5 +155,6 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(bills, tips, totals);
 //Coding Challenge #2 END
+
 
 
